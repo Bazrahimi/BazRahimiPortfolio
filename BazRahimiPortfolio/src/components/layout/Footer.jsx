@@ -4,7 +4,7 @@ import { Box, Text, Container, VStack, HStack, Link } from '@chakra-ui/react';
 
 function Footer() {
   return (
-    <Box as="footer" bg="blue.600" color="white" py="5">
+    <Box as="footer" bg="blue.600" color="white" py="5" w="100%">
       <Container maxW="container.xl">
         <VStack spacing="2">
           <HStack justifyContent="space-between" w="full">
