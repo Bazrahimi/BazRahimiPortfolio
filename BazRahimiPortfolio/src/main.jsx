@@ -7,6 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import App from './App.jsx';
 import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
+import Projects from './pages/Projects.jsx';
 
 // Define routes with child routes
 const router = createBrowserRouter([
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
+      {path: 'projects', element: <Projects />},
       // Uncomment and add your additional routes here
       // { path: 'about', element: <About /> },
       // { path: 'contact', element: <Contact /> },
