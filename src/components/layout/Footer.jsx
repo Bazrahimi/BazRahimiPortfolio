@@ -1,6 +1,6 @@
-// Footer.jsx
 import React from 'react';
 import { Box, Text, Container, VStack, HStack, Link } from '@chakra-ui/react';
+import { ExternalLinkIcon, LinkIcon, AtSignIcon } from '@chakra-ui/icons';
 
 function Footer() {
   return (
@@ -8,16 +8,18 @@ function Footer() {
       <Container maxW="container.xl">
         <VStack spacing="2">
           <HStack justifyContent="space-between" w="full">
-            <Text>&copy; {new Date().getFullYear()} My Portfolio</Text>
+            <Text>&copy; {new Date().getFullYear()} Baz Rahimi</Text>
             <HStack spacing="4">
-              {/* Add links or other content here */}
-              <Link href="/about" style={{ textDecoration: 'none' }}>About</Link>
-              <Link href="/contact" style={{ textDecoration: 'none' }}>Contact</Link>
-              {/* More links or content */}
+              <Link href="https://github.com/Bazrahimi" isExternal style={{ textDecoration: 'none' }}>
+                Github <ExternalLinkIcon mx="2px" />
+              </Link>
+              <Link href="https://www.linkedin.com/in/baz-rahimi-191370115/" isExternal style={{ textDecoration: 'none' }}>
+                LinkedIn <ExternalLinkIcon mx="2px" />
+              </Link>
             </HStack>
           </HStack>
           <Text fontSize="sm">
-            Made with <span role="img" aria-label="love">❤️</span> using React and Chakra UI
+            Crafted with dedication by Baz Rahimi (Full Stack Web Developer). Building the future with comprehensive programming expertise and the latest in tech innovation.
           </Text>
         </VStack>
       </Container>

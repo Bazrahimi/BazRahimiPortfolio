@@ -73,13 +73,6 @@ const Contact = () => {
     amazing happen!
   </Text>
 
-  {/* Contact Details */}
-  <VStack spacing={2} align="flex-start" mb={4}>
-    <Text>📞 Mobile: +61 415 886 790</Text>
-    <Text>📧 Email: bazrahimi@hotmail.com</Text>
-    <Text>🔗 LinkedIn: <Link href="https://www.linkedin.com/in/baz-rahimi-191370115/" isExternal>Baz Rahimi</Link></Text>
-    <Text>👨‍💻 GitHub: <Link href="https://github.com/Bazrahimi" isExternal>Bazrahimi</Link></Text>
-  </VStack>
       <form ref={form} onSubmit={handleSubmit}>
         <VStack spacing={4}>
           <Heading as="h1" size="xl">Contact Me</Heading>
