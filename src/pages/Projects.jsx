@@ -11,6 +11,8 @@ import {
   Badge
 } from '@chakra-ui/react';
 
+import { ExternalLinkIcon, Icon } from '@chakra-ui/icons';
+
 // Example project data
 const projectData = [
   {
@@ -38,6 +40,23 @@ const projectData = [
       link: "https://christinelea.github.io/All-Ready-Recipes/assets/html/recipe.html",
       repo: "https://github.com/ChristineLea/All-Ready-Recipes" 
     },
+    {
+      title: "Advanced Regex for Transaction Matching",
+      description: "A comprehensive solution for extracting transaction data from PDF bank statements using advanced regular expressions. This project showcases the ability to parse complex text patterns and automate the data extraction process, a valuable asset in financial software development. It involves crafting regex patterns to accurately identify dates, transaction descriptions, and financial figures within a document, streamlining the reconciliation and analysis tasks.",
+      image: "../src/assets/images/projects/regex.png", 
+      technologies: ["Regular Expressions", "Github Gist"],
+      link: "https://gist.github.com/Bazrahimi/61547eb9d758ef55ca42aef0a470dbf9", 
+      repo: "https://gist.github.com/Bazrahimi/61547eb9d758ef55ca42aef0a470dbf9" 
+    },
+    {
+      title: "J.A.R.V.I.S Text Editor",
+      description: "J.A.R.V.I.S (Just A Rather Very Intelligent System) is an advanced text editor designed for developers. This Progressive Web Application (PWA) combines the convenience of an offline-capable interface with the power of a full-featured code editor. It leverages modern web technologies like service workers for offline functionality and IndexedDB for local database storage. The editor is built with a focus on performance and user experience, integrating features like code-mirror themes for syntax highlighting and idb for robust database interactions.",
+      image: "../src/assets/images/projects/text-editor.png", 
+      technologies: ["Webpack", "Service Workers", "IndexedDB", "Babel", "PWA"],
+      link: "https://vast-wildwood-25507-132ad4bd4f85.herokuapp.com/", 
+      repo: "https://github.com/Bazrahimi/text-editor" 
+    },
+    
 
     {
       title: "Social Networking API",
@@ -47,9 +66,6 @@ const projectData = [
       link: "https://drive.google.com/file/d/1EaVKsAwIsZIBTfwCpdFPlXCXj5JRDvjz/view?pli=1", 
       repo: "https://github.com/Bazrahimi/social-network-api" 
     },
-    
-  
- 
   
 ];
 
@@ -75,11 +91,12 @@ const Projects = () => {
               ))}
             </Box>
             <Link href={project.link} isExternal color="teal.500">
-              View Project
+              View Project <Icon as={ExternalLinkIcon} mx="2px" />
             </Link>
             <Link href={project.repo} isExternal color="teal.500">
-              Source Code
+              Source Code <Icon as={ExternalLinkIcon} mx="2px" />
             </Link>
+
           </VStack>
         ))}
       </SimpleGrid>
