@@ -98,15 +98,7 @@ const AboutMe = () => {
         <Text pl="15px">
            As I code not just for today, but for the promise of a smarter, more intuitive tomorrow, I invite you to join me. Whether it's a project collaboration or a conversation on the next big thing, my digital door is always open.
         </Text>
-
-
-
-
-
-
-
-
-        
+ 
       </VStack>
     </Box>
   );

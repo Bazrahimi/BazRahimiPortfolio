@@ -10,6 +10,8 @@ import NoMatch from './pages/NoMatch.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 import ContactResponse from './pages/ContactRespond.jsx';
+import AboutMe from './pages/AboutMe.jsx';
+import theme from './components/theme.jsx';
 
 // Define routes with child routes
 const router = createBrowserRouter([
@@ -21,22 +23,19 @@ const router = createBrowserRouter([
       {path: 'projects', element: <Projects />},
       {path: 'contact', element: < Contact />},
       {path: '/contact-response', element: <ContactResponse />},
-      // Uncomment and add your additional routes here
-      // { path: 'about', element: <About /> },
-      // { path: 'contact', element: <Contact /> },
+      {path: '/about', element: <AboutMe />},
+
       { path: '*', element: <NoMatch /> }
     ],
   },
-  // You can add more routes here if necessary
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <RouterProvider router={router}>
-        {/* The App component is now receiving the Router context */}
-        {/* No need to wrap <App /> with <RouterProvider> here */}
       </RouterProvider>
     </ChakraProvider>
   </React.StrictMode>,
