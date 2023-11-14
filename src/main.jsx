@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import App from './App.jsx';
-import Home from './pages/Home';
-import NoMatch from './pages/NoMatch';
+import Home from './pages/Home.jsx';
+import NoMatch from './pages/NoMatch.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 
