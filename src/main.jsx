@@ -9,6 +9,7 @@ import Home from './pages/Home.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
+import ContactResponse from './pages/ContactRespond.jsx';
 
 // Define routes with child routes
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       {path: 'projects', element: <Projects />},
       {path: 'contact', element: < Contact />},
+      {path: '/contact-response', element: <ContactResponse />},
       // Uncomment and add your additional routes here
       // { path: 'about', element: <About /> },
       // { path: 'contact', element: <Contact /> },

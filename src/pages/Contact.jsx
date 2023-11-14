@@ -2,8 +2,9 @@ const serviceId = import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY;
 
-import React, { useRef } from 'react';
+import React, { useRef, useState} from 'react';
 import emailjs from 'emailjs-com';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   VStack,
@@ -22,9 +23,12 @@ import {
 const Contact = () => {
   const form = useRef();
   const toast = useToast();
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate(); // Hook to navigate
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs.sendForm(
       serviceId,
@@ -33,6 +37,8 @@ const Contact = () => {
       publicKey
     )
       .then((result) => {
+        setLoading(false);
+        navigate('/contact-response', { state: { user_name: e.target.user_name.value } }); // navigate to pass the state
         toast({
           title: 'Message sent.',
           description: "We've received your message and will get back to you shortly.",
@@ -41,6 +47,7 @@ const Contact = () => {
           isClosable: true,
         });
       }, (error) => {
+        setLoading(false);
         toast({
           title: 'Error',
           description: "There was an error sending your message. Please try again later.",
@@ -53,10 +60,6 @@ const Contact = () => {
 
   return (
     
-
-
-
-
     <Box p={8} maxW="800px" mx="auto">
 
 <Heading as="h2" size="xl" mb={4}>Let's Connect</Heading>
@@ -108,7 +111,7 @@ const Contact = () => {
             <FormLabel htmlFor="message">Message</FormLabel>
             <Textarea name="message" id="message" placeholder="Your message" />
           </FormControl>
-          <Button type="submit" colorScheme="blue" size="lg" width="100%">
+          <Button type="submit" colorScheme="blue" size="lg" width="100%" isLoading={loading} loadingText="Sending...">
             Send Message
           </Button>
         </VStack>
