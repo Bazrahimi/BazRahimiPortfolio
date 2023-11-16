@@ -1,18 +1,19 @@
 // src/pages/AboutMe.jsx
 import React from 'react';
-import { Box, Heading, Text, VStack, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack, List, ListItem, ListIcon, Image } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
 
 const AboutMe = () => {
+  const bannerSrc = '/images/aboutme.webp'
   return (
     <Box p={8}>
       <VStack spacing={4} align="flex-start">
-        <Heading as="h1" size="xl">
-          Welcome to Baz Rahimi's Tech Universe
-        </Heading>
+
         <Text pl="15px">
         With a decade of successfully spearheading ventures in the small business sector, I've honed the art of steering projects to success. Transitioning this passion for creation and leadership, I've embarked on a full-time voyage as a web developer, where the canvas of the web is my new frontier.
         </Text>
+
+        
 
         <Heading as="h2" size="lg">
           The Future Is Now
@@ -20,6 +21,8 @@ const AboutMe = () => {
         <Text pl="15px">
           My gaze is firmly set on the horizon of innovation — AI and Machine Learning are not just buzzwords to me, but beacons of the untapped potential I seek to explore. As a futurist, I am driven by the endless possibilities that coding and technology unlock, shaping solutions that transcend today’s challenges.
         </Text>
+
+        <Image src={bannerSrc} alt="Baz Rahimi" width="full" mb={4} />
 
         <Heading as="h2" size="lg" mb={4}>
           Skills That Forge Frontiers

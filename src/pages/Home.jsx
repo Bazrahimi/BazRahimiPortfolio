@@ -33,7 +33,7 @@ const Home = () => {
       <Box {...sliderContainerStyle}>
         <Slider {...settings}>
           <Image src="/images/1699589485771.jpeg" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
-          <Image src="/images/logo2.webp" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
+          <Image src="/images/logo2.png" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
           <Image src="/images/4173e7d5-4e70-40b6-bc03-330351f2492f.webp" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
         </Slider>
       </Box>
