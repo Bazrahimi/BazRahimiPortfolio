@@ -22,9 +22,9 @@ const Home = () => {
       {/* Slider Section */}
       <Box textAlign="center" py={10} px={6} position="relative" overflow="hidden" h="80vh" mb="10px">
         <Slider {...settings}>
-          <Image src="/public/images/1699589485771.jpeg" alt="Baz Rahimi" objectFit="fill" />
-          <Image src="/public/images/logo2.webp" alt="Baz Rahimi" objectFit="fill" />
-          <Image src="/public/images/4173e7d5-4e70-40b6-bc03-330351f2492f.webp" alt="Baz Rahimi" objectFit="fill" />
+          <Image src="/images/1699589485771.jpeg" alt="Baz Rahimi" objectFit="fill" />
+          <Image src="/images/logo2.webp" alt="Baz Rahimi" objectFit="fill" />
+          <Image src="/images/4173e7d5-4e70-40b6-bc03-330351f2492f.webp" alt="Baz Rahimi" objectFit="fill" />
         </Slider>
       </Box>
 
