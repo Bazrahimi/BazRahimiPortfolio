@@ -31,7 +31,7 @@ const Header = () => {
             Projects
           </Button>
           <Button variant="ghost" _hover={{ bg: "teal.500", color: "white" }} onClick={() => navigate('/about')}>
-            About
+            About Me
           </Button>
           <Button variant="ghost" _hover={{ bg: "teal.500", color: "white" }} onClick={() => navigate('/contact')}>
             Contact
