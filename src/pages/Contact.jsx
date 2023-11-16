@@ -16,7 +16,6 @@ import {
   Button,
   useToast,
   Select,
-  Link,
   Text,
 } from '@chakra-ui/react';
 
