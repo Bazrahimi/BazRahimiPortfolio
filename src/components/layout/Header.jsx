@@ -4,6 +4,7 @@ import { FaPhone } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import ToggleThemeButton from '../ToggleTheme';
 
+
 const Header = () => {
   const navigate = useNavigate();
 
@@ -14,7 +15,7 @@ const Header = () => {
         <Flex align="center" mr={8} cursor="pointer"
               _hover={{ transform: "scale(1.05)", transition: "transform 0.2s" }}
               onClick={() => navigate('/')}>
-          <Image src="../../src/assets/images/header.png" alt="BR Logo" htmlWidth="70px" htmlHeight="auto" mr={0} />
+          <Image src="/images/header.png" alt="BR Logo" htmlWidth="70px" htmlHeight="auto" mr={0} />
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>Web Portfolio</Heading>
         </Flex>
 
