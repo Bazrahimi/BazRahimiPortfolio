@@ -20,7 +20,7 @@ const ContactResponse = () => {
       p={8}
     >
       <Image 
-        src="/public/images/contact-response.png" 
+        src="/images/contact-response.png" 
         alt="Message Sent Confirmation"
         boxSize="300px" 
         objectFit="cover"
