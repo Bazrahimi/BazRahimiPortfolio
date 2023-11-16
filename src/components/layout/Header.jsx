@@ -15,7 +15,7 @@ const Header = () => {
         <Flex align="center" mr={8} cursor="pointer"
               _hover={{ transform: "scale(1.05)", transition: "transform 0.2s" }}
               onClick={() => navigate('/')}>
-          <Image src="/images/header.png" alt="BR Logo" htmlWidth="70px" htmlHeight="auto" mr={0} />
+          <Image src="public/images/header.png" alt="BR Logo" htmlWidth="70px" htmlHeight="auto" mr={0} />
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>Web Portfolio</Heading>
         </Flex>
 
