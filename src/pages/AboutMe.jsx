@@ -22,7 +22,7 @@ const AboutMe = () => {
           My gaze is firmly set on the horizon of innovation — AI and Machine Learning are not just buzzwords to me, but beacons of the untapped potential I seek to explore. As a futurist, I am driven by the endless possibilities that coding and technology unlock, shaping solutions that transcend today’s challenges.
         </Text>
 
-        <Image src={bannerSrc} alt="Baz Rahimi" width="full" mb={4} />
+        <Image src={bannerSrc} alt="Baz Rahimi" width="full" maxWidth={{ base: "80%", lg: "40%"}} m="auto" mb={4} borderRadius="md" />
 
         <Heading as="h2" size="lg" mb={4}>
           Skills That Forge Frontiers
