@@ -10,21 +10,31 @@ const Home = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 4000,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
+  };
+
+  const sliderContainerStyle = {
+    textAlign: "center",
+    py: { base: 2, md: 10 }, 
+    px: { base: 2, md: 6 },
+    position: "relative",
+    overflow: "hidden",
+    h: { base: "40vh", md: "80vh" }, // Smaller height on base, larger on medium screens and up
+    mb: { base: 2, md: 10 }, // Reduced bottom margin on small screens
   };
 
   return (
-    <VStack spacing={0} align="stretch">
+    <VStack spacing={{ base: 1, md: 8 }} align="stretch">
       {/* Slider Section */}
-      <Box textAlign="center" py={10} px={6} position="relative" overflow="hidden" h="80vh" mb="10px">
+      <Box {...sliderContainerStyle}>
         <Slider {...settings}>
-          <Image src="/images/1699589485771.jpeg" alt="Baz Rahimi" objectFit="fill" />
-          <Image src="/images/logo2.webp" alt="Baz Rahimi" objectFit="fill" />
-          <Image src="/images/4173e7d5-4e70-40b6-bc03-330351f2492f.webp" alt="Baz Rahimi" objectFit="fill" />
+          <Image src="/images/1699589485771.jpeg" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
+          <Image src="/images/logo2.webp" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
+          <Image src="/images/4173e7d5-4e70-40b6-bc03-330351f2492f.webp" alt="Baz Rahimi" objectFit="cover" boxSize="full" />
         </Slider>
       </Box>
 
