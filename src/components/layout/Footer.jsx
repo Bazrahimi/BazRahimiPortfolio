@@ -16,6 +16,10 @@ function Footer() {
               <Link href="https://www.linkedin.com/in/baz-rahimi-191370115/" isExternal style={{ textDecoration: 'none' }}>
                 LinkedIn <ExternalLinkIcon mx="2px" />
               </Link>
+              {/* Add your Monash University badge link here */}
+              <Link href="https://www.credly.com/badges/cec1de68-27a2-408d-b4e2-a01e7e2132ae" isExternal>
+                Monash University Certification <ExternalLinkIcon mx="2px" />
+              </Link>
             </HStack>
           </HStack>
           <Text fontSize="sm">
